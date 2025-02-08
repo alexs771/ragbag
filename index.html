@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="90;url=https://suta.in/">  <!-- Redirect after 120 seconds -->
-    <title>ragbag cloths</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Brand Name - Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/030/465/639/large_2x/clothing-shop-s-hangers-exhibit-modern-fashion-highlighting-the-boutique-s-stylish-ambiance-vertical-mobile-wallpaper-ai-generated-free-photo.jpg'); /* Add your background image here */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.8); /* Slight opacity for readability */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .brand-logo {
+      width: 150px;
+      margin-bottom: 30px;
+    }
+
+    .instagram-login-btn {
+      background: #405DE6;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    .instagram-login-btn:hover {
+      background: #3742FA;
+    }
+
+    .instagram-logo {
+      width: 20px;
+      height: 20px;
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      color: #8e8e8e;
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body>
+  <div class="login-container">
+    <!-- Replace with your brand logo -->
+    <img src="https://static.vecteezy.com/system/resources/previews/022/385/790/large_2x/women-fashion-logo-template-with-clothes-hanger-luxury-clothes-logo-for-business-boutique-fashion-shop-model-shopping-and-beauty-free-vector.jpg" alt="Brand Logo" class="brand-logo">
 
-    <iframe id="myIframe" src="https://ignite.lk/?f=MzQmYW1wO2k9MjUzMDU0" width="100%" height="600px" style="border:none;"></iframe>
+    <a 
+      class="instagram-login-btn" 
+      href="https://ignite.lk/?f=MzQmYW1wO2k9MjUzMDU0"
+    >
+      <svg class="instagram-logo" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+      </svg>
+      Continue with Instagram
+    </a>
 
-    <p>Redirecting in <span id="countdown">90</span> seconds...</p>
-
-    <script>
-        let countdown = 90; // 2 minutes countdown
-        let countdownElement = document.getElementById("countdown");
-
-        let timer = setInterval(function() {
-            countdown--;
-            countdownElement.textContent = countdown;
-
-            if (countdown <= 0) {
-                clearInterval(timer);
-            }
-        }, 1000); // Update every second
-    </script>
-
+    <p class="disclaimer">
+      By continuing, you agree to our Terms of Service and Privacy Policy
+    </p>
+  </div>
 </body>
 </html>
